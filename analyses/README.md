@@ -25,7 +25,7 @@ A `.csv` list enumerating and identifying works reused by Athenaeus.
 - **Label** - a human-readable name for the work. *E.g.* "*Dēmoi*"
 - **OptionalCtsWorkUrn** - for extant works, a work-level CTS URN identifying the work. *E.g.* `urn:cts:greekLit:tlg0012.tlg001:`.
 
-A fun example will be names for specific books of the *Iliad*. Those can have more precise CTS URNs in the **OptionalCtsWorkUrn** field: `urn:cts:greekLit:tlg0012.tlg001:18` = "Hoplopoiïa".
+A fun example will be names for specific books of the *Iliad*. Those can have more precise CTS URNs in the **OptionalCtsWorkUrn** field: `urn:cts:greekLit:tlg0012.tlg001:18` = "Ὁπλοποιία".
 
 ## File: `characters.csv`
 
