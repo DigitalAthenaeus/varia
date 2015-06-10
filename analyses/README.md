@@ -27,9 +27,20 @@ A `.csv` list enumerating and identifying works reused by Athenaeus.
 
 A fun example will be names for specific books of the *Iliad*. Those can have more precise CTS URNs in the **OptionalCtsWorkUrn** field: `urn:cts:greekLit:tlg0012.tlg001:18` = "Hoplopoiïa".
 
+## File: `characters.csv`
+
+A `.csv` list enumerating and identifying sophists who take part in the banquet described by Athenaeus.
+
+### Properties
+
+- **EntityUrn** - a CITE URN uniquely identifying a character.
+- **CtsUrn** - a CTS URN identifying a passage *in Athenaeus* where the character is mentioned. This passage serves to justify the character's inclusion in the list; when a character is reused often, the passage here should be a clear, unambiguous reference. *E.g.* "Ulpianus says…".
+- **Label** - a human-readable name for the character. *E.g.* "Galenus Pergamenus"
+- **OptionalCtsGroupUrn** - for extant characters, a group-level CTS URN identifying the character. *E.g.* `urn:cts:greekLit:tlg0057:`.
+
 ## File: `mentions.csv`
 
-A `.csv` file cataloging every mention of authors and works in Athenaeus, and Athenaeus' vocabulary for identifying authors and works. For example, Athenaeus may mention that a work by Archestratus of Syracuse was known by four different names (i.e., Gastronomy, Life of Pleasure, Science of Dining, or Art of Cooking); this would generate five entries in this list: one mention of "Archestratus", and four mentions of the same work.
+A `.csv` file cataloging every mention of authors, characters and works in Athenaeus, and Athenaeus' vocabulary for identifying authors, characters and works. For example, Athenaeus may mention that a work by Archestratus of Syracuse was known by four different names (i.e., Gastronomy, Life of Pleasure, Science of Dining, or Art of Cooking); this would generate five entries in this list: one mention of "Archestratus", and four mentions of the same work.
 
 ### Properties
 
@@ -46,7 +57,7 @@ A `.csv` file cataloging every mention of authors and works in Athenaeus, and At
 - **CtsUrn** - a CTS URN specifying a passage in Athenaeus containing text-reuse. This should be a range that *includes* language marking the passage as text-reuse (*verbum dicendi*, etc.)
 - **TextContent** - a string containing the precise textual content, from Athenaeus, that is reused; this will exclude *verba dicendi*, etc.
 - [may be empty; only for extant works] **Analytical Edition URN** - a CTS URN attaching the reused text (from Athenaeus) to the ordered, hierarchical citation scheme of the reused work.
-- [may be empty; only for extant works] **Alignment URN** - a CTS URN specifying text in another edition of the reused work, used to assert an explicit alignment between Athenaeus' language and the language of another text. *E.g.* We see Athenaeus' use of βουλεύεσθαι at 1.18 as an allusion to βουληφόρε at *Iliad* 20.83; this is not a literal string match, nor are the two instances of the same lexical entity; we are asserting an alignment that is not discoverable by any automated process; the **alignment urn** allows us to make this alignment explicit.
+- [may be empty; only for extant works] **Alignment URN** - a CTS URN specifying text in another edition of the reused work, used to assert an explicit alignment between Athenaeus' language and the language of another text. *E.g.* We see Athenaeus' use of βουλεύεσθαι at 1.18 as an allusion to βουληφόρε at *Iliad* 20.83; this is not a literal string match, nor are the two instances of the same lexical entity; we are asserting an alignment that is not discoverable by any automated process; the **alignment urn** allows us to make this alignment explicit.
 - [may be empty] **Commentary**.
 - **Resp**. The editor responsible for asserting the existence of, and documenting, this instance of text reuse.
 
