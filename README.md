@@ -1,2 +1,2 @@
 # varia
-contains directory and files moved from OGL
+contains directories and files moved from OGL
